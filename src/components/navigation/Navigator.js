@@ -7,12 +7,26 @@ function Navigator(){
             <NavButton name = "Create" icon="control_point_duplicate"/>
             <NavButton name = "OverView " icon = "Dashboard" />
             <NavButton name = "Bills" icon = "request_quote" />
+            <NavButton name = "Finance" icon = "currency_rupee" />
+            <NavButton name = "Me" icon = "badge" />
+            <NavButton name = "Create Bill" icon="list_alt_add"/>
+            <NavButton name="Add product" icon="add_shopping_cart" /> 
+            <NavButton name="Settings" icon="settings" /> 
+            {/* <CreateButton /> */}
        
         </div>
     )
 
 
 }
+// function CreateButton(){
+//      return(
+//         <div className="navDiv">
+//             <NavButton name = "Create Bill" icon="list_alt_add"/>
+//             <NavButton name="Add product" icon="add_shopping_cart" />   
+//         </div>
+//      )
+// }
 
 function NavButton(props){
     return(

@@ -3,6 +3,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    background-color: var(--white);
 }
 
 
@@ -14,7 +15,8 @@ html, body {
 }
 :root{
     --dark_blue : #001844;
-    --white : white;
+    --white : aliceblue;
+    --aqua : aqua;
 
     
 }

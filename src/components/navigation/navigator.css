@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: fixed;
 
 }
 .navBtn{
@@ -18,8 +19,18 @@
     gap: 10%;
     
 }
+.navDiv{
+    width: 180px;
+    height: 120px;
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .navBtn:hover{
-    color: aqua;
+    color: var(--aqua);
     cursor: pointer;
 }
 
@@ -30,6 +41,7 @@
     }
     .navBtn{
         width: 100%;
+        justify-content: center;
     }
     .navBtn p{
       display: none;
