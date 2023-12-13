@@ -1,5 +1,4 @@
-import Navigator from "./components/navigation/Navigator";
-
+import Navigator from "./components/navigation/navigator";
 
 function App() {
   return (
