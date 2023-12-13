@@ -1,32 +1,41 @@
 import "../../assets/css/universal.css"
 import "./navigator.css";
+
+
+let navButtons = [
+    { name: "Create", icon: "control_point_duplicate" },
+    { name: "OverView", icon: "Dashboard" },
+    { name: "Bills", icon: "request_quote" },
+    { name: "Finance", icon: "currency_rupee" },
+    { name: "Me", icon: "badge" },
+    { name: "Settings", icon: "settings" },
+    { name: "Create Bill", icon: "list_alt_add" },
+    { name: "Add product", icon: "add_shopping_cart" }
+]
+let create = [
+{ name: "Create Bill", icon: "list_alt_add" },
+{ name: "Add product", icon: "add_shopping_cart" }]
+
 function Navigator(){
+
+    let buttons = navButtons.map(btn=> <NavButton name = {btn.name} icon = {btn.icon} />);
   
     return (
         <div className="navBar">
-            <NavButton name = "Create" icon="control_point_duplicate"/>
-            <NavButton name = "OverView " icon = "Dashboard" />
-            <NavButton name = "Bills" icon = "request_quote" />
-            <NavButton name = "Finance" icon = "currency_rupee" />
-            <NavButton name = "Me" icon = "badge" />
-            <NavButton name = "Create Bill" icon="list_alt_add"/>
-            <NavButton name="Add product" icon="add_shopping_cart" /> 
-            <NavButton name="Settings" icon="settings" /> 
-            {/* <CreateButton /> */}
+            {buttons}
        
         </div>
     )
 
-
 }
-// function CreateButton(){
-//      return(
-//         <div className="navDiv">
-//             <NavButton name = "Create Bill" icon="list_alt_add"/>
-//             <NavButton name="Add product" icon="add_shopping_cart" />   
-//         </div>
-//      )
-// }
+function CreateButton(){
+    let createBtns = create.map(c => <NavButton name = {c.name} icon = {c.icon} />);
+     return(
+        <div className="navDiv">
+           {createBtns} 
+        </div>
+     )
+}
 
 function NavButton(props){
     return(
