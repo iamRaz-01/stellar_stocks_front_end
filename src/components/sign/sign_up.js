@@ -1,10 +1,13 @@
 import "./sign.css"
+import logo from "../../assets/images/stellarstocksLogo.png"
 
 
 function SignIn(){
     return(
         <div className="signUpDiv">
-            <h2>Sign Up     </h2>
+            
+            <h2> <img src= {logo} alt ={"logo"} className="logo"/> Sign Up   <ExitButton />
+ </h2>
              <InputDiv icon="badge" placeholder="Enter Your Name" />
              <InputDiv icon="call" placeholder="Enter Your Number" />
              <InputDiv icon="mail" placeholder="Enter Your E-mail" />
@@ -41,5 +44,16 @@ function SubmitBtn(){
         <button className="submitBtn" >Submit</button>
     )
 }
+function ExitButton(){
+    return(
+        <div>
+           <span class="material-symbols-outlined">
+   logout
+</span>
+            
+             </div>
+    )
+}
+
 
 export default SignIn;
