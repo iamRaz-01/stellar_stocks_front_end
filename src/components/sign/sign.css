@@ -2,7 +2,7 @@
 
 
 .signUpDiv{
-    width: 27%;
+    width: 25%;
     height: 450px;
     background-color: white;
     border: 1px solid var(--dark_blue);
@@ -29,6 +29,7 @@
     border: none;
     border-radius: 30px;
     background: none;
+    padding-left: 3%;
 }
 .inputDiv input:focus{
     background-color: white;
