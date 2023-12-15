@@ -13,8 +13,6 @@ function SignIn(){
              <InputDiv icon="mail" placeholder="Enter Your E-mail" />
              <InputDiv icon="key" placeholder="Create Password " />
              <InputDiv icon="key" placeholder="Confirm Password" />
-            
-            
              <SubmitBtn />
         </div>
        

@@ -29,7 +29,7 @@
     height: 70%;
     width: 15%;
     display: flex;
-    justify-content: end;    
+    justify-content: flex-end;    
     align-items: flex-start;
     cursor: pointer;
     color: red;
