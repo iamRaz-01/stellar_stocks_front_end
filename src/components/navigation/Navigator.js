@@ -6,6 +6,7 @@ import { useState } from "react";
 
 
 function click(){
+     
     
 }
 let navButtons = [
@@ -21,38 +22,33 @@ let navButtons = [
 // { name: "Add product", icon: "add_shopping_cart" }]
 
 function Navigator(){
-    let [sam,setSam] = useState(0);
-    const change  = ()=>{
-        setSam(sam+=1)
-    }
-
-
-
-    let buttons = navButtons.map(btn=> <NavButton name = {btn.name} icon = {btn.icon} event={change} />);
-  
     return (
         <div className="navBar">
             <img src={logo} alt="LOGO"  className="logo" />
-            {buttons}
-            {sam}
+            <NavBar />
             
        
         </div>
     )
 
 }
-// function CreateButton(){
-//     let createBtns = create.map(c => <NavButton name = {c.name} icon = {c.icon} />);
-//      return(
-//         <div className="navDiv">
-//            {createBtns} 
-//         </div>
-//      )
-// }
+
+
+function NavBar(){
+
+    return(
+        <div className="navbrBtn">
+            <NavButton icon="badge" name="Profile" />
+
+        </div>
+    )
+}
+
+
 
 function NavButton(props){
     return(
-        <button className="navBtn" onClick={props.event}>
+        <button className="navBtn" >
             <span className="material-symbols-outlined">
             {props.icon}
           </span>
