@@ -47,8 +47,7 @@ function ExitButton(){
         <div>
            <span class="material-symbols-outlined">
    logout
-</span>
-            
+</span>    
              </div>
     )
 }

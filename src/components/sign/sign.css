@@ -16,6 +16,9 @@
     gap: 4%;
     align-items: center;
 }
+.login{
+    height: 250px;
+}
 .signUpDiv h2{
     display: flex;
     align-items: center;
