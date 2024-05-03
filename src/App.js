@@ -1,14 +1,10 @@
-import Navigator from "./components/navigation/navigator";
-import SignIn from "./components/sign/sign_up";
 import "./assets/css/universal.css"
-import Login from "./components/sign/login_in";
+import {Navigator} from './components/navigation/Navigator.tsx'
+
 function App() {
   return (
     <div className="App">
-      <Navigator />
-      <SignIn />
-      <Login/>
-      
+      <Navigator/>
     </div>
   );
 }

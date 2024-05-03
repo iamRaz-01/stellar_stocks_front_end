@@ -1,0 +1,106 @@
+@import url(./universal.css);
+
+.Navigation {
+    width: 170px;
+    height: 100vh;
+    background-color: var(--Dark-Blue);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 10px;
+    gap: 3%;
+}
+.logo-container {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.Navigation img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+
+}
+.naviBtn{
+    width: 150px;
+    height: 40px;
+    color: white;
+    outline :none;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10%;
+    background-color: var(--Dark-Blue);
+    padding-left: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.naviBtn:hover{
+    background-color: white;
+    cursor: pointer;
+    color: var(--Dark-Blue);
+
+}
+
+.activeBtn{
+    background-color: white;
+    color: var(--Dark-Blue);
+}
+.pop-content{
+    display: none;
+    height: 300px;
+    width: 300px;
+
+}
+.pop-active{
+    display: flex;
+    position: absolute;
+    left: 100%;
+    
+    color: black;
+
+}
+
+
+@media screen and (max-width: 390px) 
+{
+    .Navigation{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+         position: fixed;
+        bottom: 0;
+        padding-top: 0px;
+    }
+    .logo-container{
+       display: none;
+    }
+    .naviBtn{
+        width: 50px;
+        height:50px;
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        border-radius: 40px;
+        font-size: 30px;
+        padding-left: 0px;
+       
+    }
+    .activeBtn{
+        margin-top: -15px;
+        width: 55px;
+        height: 55px;
+        border: 5px solid var(--Dark-Blue);
+
+    }
+    .btnText{
+        display: none;
+    }
+    
+}
